@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -84,7 +85,8 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Other"/>
+            android:text="Other"
+            android:enabled="false"/>
 
     </RadioGroup>
 
@@ -96,14 +98,27 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Agree in Private Information Policy"/>
+        android:text="Agree in Private Information Policy"
+        android:visibility="gone"/>
 
-
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register In"/>
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancle"
+            android:layout_marginEnd="5dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Register In"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+
 
     </LinearLayout>
 
