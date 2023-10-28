@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "kr.ac.wku.uisignup_231028"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "kr.ac.wku.uisignup_231028"
